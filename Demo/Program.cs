@@ -32,26 +32,62 @@ namespace Demo
             //Console.WriteLine($"Count Of ArrayList: {arrayList.Count}");
             //Console.WriteLine($"Capacity Of ArrayList: {arrayList.Capacity}"); //double size when added the fifth elemnt
             ArrayList arrayList1 = new ArrayList(5);
-            Console.WriteLine($"Count ==> {arrayList1.Count}");
-            Console.WriteLine($"Capacity ==> {arrayList1.Capacity}");
+            //Console.WriteLine($"Count ==> {arrayList1.Count}");
+            //Console.WriteLine($"Capacity ==> {arrayList1.Capacity}");
             arrayList1.AddRange(new int[] { 1, 2, 3, 4, 5 });
-            Console.WriteLine($"Count ==> {arrayList1.Count}");
-            Console.WriteLine($"Capacity ==> {arrayList1.Capacity}");
+            //Console.WriteLine($"Count ==> {arrayList1.Count}");
+            //Console.WriteLine($"Capacity ==> {arrayList1.Capacity}");
             arrayList1.Add(6);
-            Console.WriteLine($"Count ==> {arrayList1.Count}");
-            Console.WriteLine($"Capacity ==> {arrayList1.Capacity}");
+            //Console.WriteLine($"Count ==> {arrayList1.Count}");
+            //Console.WriteLine($"Capacity ==> {arrayList1.Capacity}");
             arrayList1.TrimToSize();
-            Console.WriteLine($"Count ==> {arrayList1.Count}");
-            Console.WriteLine($"Capacity ==> {arrayList1.Capacity}");
+            //Console.WriteLine($"Count ==> {arrayList1.Count}");
+            //Console.WriteLine($"Capacity ==> {arrayList1.Capacity}");
             //arrayList1.Add("Omar");
 
             int? Sum = SumArrayList(arrayList1);
-            Console.WriteLine(Sum);
+            //Console.WriteLine(Sum);
             int? sum = SumArrayList(arrayList);
-            Console.WriteLine(sum);
+            //Console.WriteLine(sum);
             #endregion
 
+            #region Generics Collections{List}
+            //List<int> list = new List<int>();
+            //Console.WriteLine($"Count Of List: {list.Count}");
+            //Console.WriteLine($"Capacity Of List: {list.Capacity}");
+            //list.Add(3);
+            //Console.WriteLine($"Count Of List: {list.Count}");
+            //Console.WriteLine($"Capacity Of List: {list.Capacity}");
+            //list.AddRange(new int[]{ 1,2,4});
+            //Console.WriteLine($"Count Of List: {list.Count}");
+            //Console.WriteLine($"Capacity Of List: {list.Capacity}");
+            //list.Add(3);
+            //Console.WriteLine($"Count Of List: {list.Count}");
+            //Console.WriteLine($"Capacity Of List: {list.Capacity}");
+            //list.TrimExcess();  // New Array Size = 5 & The Old Array ==> UnReachable
+            //Console.WriteLine($"Count Of List: {list.Count}");
+            //Console.WriteLine($"Capacity Of List: {list.Capacity}");
 
+            //List<int> list = new List<int>(5) { 1, 2, 3, 4, 5 };
+            //Console.WriteLine($"Count Of List: {list.Count}");
+            //Console.WriteLine($"Capacity Of List: {list.Capacity}");
+            //list.Add(6);
+            ////list.Add("Omar");  // Invalid
+            //Console.WriteLine($"Count Of List: {list.Count}");
+            //Console.WriteLine($"Capacity Of List: {list.Capacity}");
+            //list[0] = 8;
+            //foreach (var num in list)
+            //{
+            //    Console.WriteLine(num); 
+            //}
+            //for (int i = 0; i < list.Count; i++)
+            //{
+            //    Console.WriteLine(list[i]);
+            //}
+
+            //List<int> list = new List<int>(5) { 1, 2, 3, 4, 5 };
+            //Console.WriteLine(Helper.SumList(list));
+            #endregion
         }
     }
 }
