@@ -88,6 +88,27 @@ namespace Demo
             //List<int> list = new List<int>(5) { 1, 2, 3, 4, 5 };
             //Console.WriteLine(Helper.SumList(list));
             #endregion
+
+            #region List Methods
+            List<int> Numbers = new List<int>(4) { 1, 2, 3, 4 ,3};
+            //Numbers.Add(3); //object member method
+            //Numbers.AddRange(new int[] { 1, 4 });
+            //Numbers.Insert(1, 2);
+            //Numbers.InsertRange(4, new int[] { 5, 6 });
+            Numbers.Sort();
+            //Numbers.Clear();
+            foreach (var Num in Numbers)
+            {
+                Console.WriteLine(Num);
+            }
+            Console.WriteLine($"Sum List: {Helper.SumList(Numbers)}");
+            Console.WriteLine($"Index[2]: {Numbers.BinarySearch(3)}");
+            Console.WriteLine($"This Element Is Exist? {Numbers.Contains(9)}");
+            Console.WriteLine(Numbers.Capacity);
+            Console.WriteLine(Numbers.EnsureCapacity(6));
+            Console.WriteLine(Numbers.IndexOf(3));
+            Console.WriteLine(Numbers.LastIndexOf(3));
+            #endregion
         }
     }
 }
